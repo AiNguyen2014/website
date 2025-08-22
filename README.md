@@ -3,7 +3,7 @@
 
 **📖 Giới thiệu**
 
-  EmailListMVC là một ứng dụng web đơn giản được xây dựng theo mô hình MVC (Model - View - Controller).
+EmailListMVC là một ứng dụng web đơn giản được xây dựng theo mô hình MVC (Model - View - Controller).
 Ứng dụng cho phép người dùng nhập thông tin cá nhân (Email, First Name, Last Name) để đăng ký vào danh sách email.
 
 **Quy trình hoạt động:**
@@ -17,32 +17,7 @@
   4. Nếu muốn thêm email khác, người dùng có thể nhấn Return để quay lại trang đăng ký.
 
 **📂 Cấu trúc thư mục**
-EmailListMVC/
-│── Deployment Descriptor: EmailListMVC
-│── JAX-WS Web Services
-│── Java Resources
-│── build/
-│
-└── src/
-    └── main/
-        ├── java/
-        │   └── murach/
-        │       ├── business/
-        │       │   └── User.java           # Model: lớp mô tả User (email, firstname, lastname)
-        │       ├── data/
-        │       │   └── UserDB.java         # Model: xử lý lưu trữ User (giả lập DB)
-        │       └── email/
-        │           └── EmailListServlet.java # Controller: xử lý request/response
-        │
-        └── webapp/
-            ├── META-INF/
-            │   └── MANIFEST.MF
-            ├── WEB-INF/
-            │   ├── lib/                    # Chứa thư viện hỗ trợ (nếu có)
-            │   └── web.xml                 # Cấu hình servlet & routing
-            ├── index.html                  # View: form nhập email
-            ├── main.css                    # View: stylesheet cho giao diện
-            └── thanks.jsp                  # View: trang cảm ơn hiển thị thông tin đã nhập
+<img width="335" height="555" alt="image" src="https://github.com/user-attachments/assets/1fcbd3f8-5839-4324-ad7f-29767e2bf0a1" />
 
 **🖥️ Chức năng chi tiết**
 1. Trang Index (index.html)
@@ -51,33 +26,31 @@ URL: http://localhost:8080/EmailListMVC/index.html
 
 Chức năng: hiển thị form nhập liệu.
 
-_Các trường nhập:_
+**_Các trường nhập:_**
+    Email
+    First Name
+    Last Name
 
-  Email
+**_Nút bấm:_**
 
-  First Name
+    Join Now → gửi dữ liệu đến EmailListServlet để xử lý.
 
-  Last Name
+**2. Controller EmailListServlet.java**
 
-_Nút bấm:_
+Nhận dữ liệu từ index.html.
 
-  Join Now → gửi dữ liệu đến EmailListServlet để xử lý.
+Tạo đối tượng User từ dữ liệu nhập.
 
-2. Controller EmailListServlet.java
+Gửi dữ liệu sang thanks.jsp.
 
-  Nhận dữ liệu từ index.html.
+**3. Trang Thanks (thanks.jsp)**
 
-  Tạo đối tượng User từ dữ liệu nhập.
+Hiển thị lại thông tin mà người dùng vừa nhập.
 
-  Gửi dữ liệu sang thanks.jsp.
-
-3. Trang Thanks (thanks.jsp)
-
-  Hiển thị lại thông tin mà người dùng vừa nhập.
-
-  Có nút Return quay lại index.html để nhập thêm email mới.
+Có nút Return quay lại index.html để nhập thêm email mới.
 
 **📸 Giao diện minh họa**
+
 Trang 1: Form đăng ký email
 
 <img width="630" height="323" alt="image" src="https://github.com/user-attachments/assets/558a4553-bf18-40db-9d3c-685dc6bec89c" />
@@ -88,20 +61,20 @@ Trang 2: Trang cảm ơn (hiển thị thông tin đã nhập)
 
 **⚙️ Công nghệ sử dụng**
 
-  Java Servlet (Controller)
+Java Servlet (Controller)
 
-  JSP (View)
+JSP (View)
 
-  HTML/CSS (Giao diện)
+HTML/CSS (Giao diện)
 
-  Mô hình MVC để tách biệt logic và giao diện
+Mô hình MVC để tách biệt logic và giao diện
 
 **🚀 Cách chạy project**
 
-  Import project vào Eclipse hoặc IDE hỗ trợ Java EE.
+Import project vào Eclipse hoặc IDE hỗ trợ Java EE.
 
-  Cấu hình server Tomcat (ví dụ Tomcat 9.0).
+Cấu hình server Tomcat (ví dụ Tomcat 9.0).
 
-  Deploy project EmailListMVC lên server.
+Deploy project EmailListMVC lên server.
 
-  Truy cập ứng dụng tại: http://localhost:8080/EmailListMVC/index.html
+Truy cập ứng dụng tại: http://localhost:8080/EmailListMVC/index.html
