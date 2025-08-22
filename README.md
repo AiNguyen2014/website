@@ -1,4 +1,6 @@
 📧 EmailListMVC
+
+
 **📖 Giới thiệu**
 
   EmailListMVC là một ứng dụng web đơn giản được xây dựng theo mô hình MVC (Model - View - Controller).
@@ -77,9 +79,11 @@ _Nút bấm:_
 
 **📸 Giao diện minh họa**
 Trang 1: Form đăng ký email
+
 <img width="630" height="323" alt="image" src="https://github.com/user-attachments/assets/558a4553-bf18-40db-9d3c-685dc6bec89c" />
 
 Trang 2: Trang cảm ơn (hiển thị thông tin đã nhập)
+
 <img width="938" height="402" alt="image" src="https://github.com/user-attachments/assets/fce0e4a5-bbea-4164-bb5d-61b66f22a9f3" />
 
 **⚙️ Công nghệ sử dụng**
