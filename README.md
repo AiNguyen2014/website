@@ -16,6 +16,7 @@ EmailListMVC là một ứng dụng web đơn giản được xây dựng theo m
 
   4. Nếu muốn thêm email khác, người dùng có thể nhấn Return để quay lại trang đăng ký.
 
+
 **📂 Cấu trúc thư mục**
 <img width="335" height="555" alt="image" src="https://github.com/user-attachments/assets/1fcbd3f8-5839-4324-ad7f-29767e2bf0a1" />
 
